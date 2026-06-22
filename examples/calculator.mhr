@@ -1,0 +1,27 @@
+# Calculator class example
+
+class Calculator
+  property result
+  
+  method __init
+    result = 0
+  end
+  
+  method add(x)
+    result = result + x
+  end
+  
+  method subtract(x)
+    result = result - x
+  end
+  
+  method display
+    print("Result: " + result)
+  end
+end
+
+var calc = Calculator()
+calc.add(10)
+calc.add(5)
+calc.subtract(3)
+calc.display()
